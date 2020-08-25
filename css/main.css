@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+#page-wrap {
+	height: 100%;
+	width: 100%;
+	background-color: #ccc;
+	display: flex;
+}
+#board {
+	position: relative;
+	margin: auto;
+	border: solid 10px #666;
+	border-radius: 5px;
+}
+.row {
+	height: 60px;
+	text-align: center;
+	position: relative;
+}
+.square {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	text-align: center;
+	pointer-events: none;
+	position: relative;
+}
+.square.white {
+	background-color: white;
+}
+.square.black {
+	background-color: black;
+}
+.square:hover {
+	background-color: #aaa;
+}
+.highlight {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	pointer-events: auto;
+}
+.white.piece {
+	background-image: url('/Chesslocal/images/whitePieces.png');
+}
+.black.piece {
+	background-image: url('/Chesslocal/images/blackPieces.png');
+}
+.piece {
+	display: inline-block;
+	pointer-events: auto;
+}
+.black.piece.king {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	background-color: red;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 10px;
+}
+.black.piece.queen{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	background-color: blue;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 10px;
+}
+.pawn {
+	width: 60px;
+	height: 60px;
+}
+.rook {
+	width: 60px;
+	height: 60px;
+	background-position: -60px 0;
+}
+.knight {
+	width: 60px;
+	height: 60px;
+	background-position: -120px 0;
+}
+.bishop {
+	width: 60px;
+	height: 60px;
+	background-position: 0 -60px;
+}
+.queen {
+	width: 60px;
+	height: 60px;
+	background-position: -60px -60px;
+}
+.king {
+	width: 60px;
+	height: 60px;
+	background-position: -120px -60px;
+}
+.test {
+	background-color: red !important;
+}
+/*#reset {
+	top: 50px;
+	left: 50%;
+	margin-left: -49px;
+	padding: 5px;
+	border: 3px #666 solid;
+	border-radius: 5px;
+	position: absolute;
+}*/
